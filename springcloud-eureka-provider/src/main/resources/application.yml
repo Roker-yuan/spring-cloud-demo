@@ -1,0 +1,15 @@
+# 定义服务端口号
+server:
+  port: 8700
+
+# 当前服务名称
+spring:
+  application:
+    name: sc-provider
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:8761/eureka
